@@ -1,0 +1,9 @@
+.vscode
+*.ps1
+*.exe
+*.db
+*.log
+*.tmp
+*.obj
+*.pdb
+/x64/
