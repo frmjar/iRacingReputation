@@ -101,6 +101,12 @@
         <ClCompile Include="Utils\Persistence\Database.cpp" />
         <ClCompile Include="Utils\Persistence\ReputationRepository.cpp" />
         <ClCompile Include="External\SQLite\sqlite3.c" />
+        <ClCompile Include="UI\DriverTagWindow.cpp" />
+        <ClCompile Include="UI\DriverTagWindow_Init.cpp" />
+        <ClCompile Include="UI\DriverTagWindow_Render.cpp" />
+        <ClCompile Include="UI\DriverTagWindow_Persistence.cpp" />
+        <ClCompile Include="UI\DriverTagWindow_Helpers.cpp" />
+        <ClCompile Include="UI\DriverTagWindow_Views.cpp" />
     </ItemGroup>
     <ItemGroup>
         <ClInclude Include="Core\IRacingSDK\IRacingConnection.h" />

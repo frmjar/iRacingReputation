@@ -24,6 +24,11 @@ if "%1"=="release" (
     Utils/IRacing/YAMLDriverParser.cpp ^
     Utils/IRacing/SessionInfoProvider.cpp ^
     UI/DriverTagWindow.cpp ^
+    UI/DriverTagWindow_Init.cpp ^
+    UI/DriverTagWindow_Render.cpp ^
+    UI/DriverTagWindow_Persistence.cpp ^
+    UI/DriverTagWindow_Helpers.cpp ^
+    UI/DriverTagWindow_Views.cpp ^
     UI/DriverTag/DriverTagManager.cpp ^
     UI/DriverTag/Components/DriverListComponent.cpp ^
     UI/DriverTag/Components/DriverInfoComponent.cpp ^
@@ -58,6 +63,11 @@ if "%1"=="release" (
     Utils/IRacing/YAMLDriverParser.cpp ^
     Utils/IRacing/SessionInfoProvider.cpp ^
     UI/DriverTagWindow.cpp ^
+    UI/DriverTagWindow_Init.cpp ^
+    UI/DriverTagWindow_Render.cpp ^
+    UI/DriverTagWindow_Persistence.cpp ^
+    UI/DriverTagWindow_Helpers.cpp ^
+    UI/DriverTagWindow_Views.cpp ^
     UI/DriverTag/DriverTagManager.cpp ^
     UI/DriverTag/Components/DriverListComponent.cpp ^
     UI/DriverTag/Components/DriverInfoComponent.cpp ^
