@@ -107,6 +107,8 @@
         <ClCompile Include="UI\DriverTagWindow_Persistence.cpp" />
         <ClCompile Include="UI\DriverTagWindow_Helpers.cpp" />
         <ClCompile Include="UI\DriverTagWindow_Views.cpp" />
+        <ClCompile Include="Overlay\OverlayProximityTags.cpp" />
+        <ClCompile Include="Core\Application\ProximityLogic.cpp" />
     </ItemGroup>
     <ItemGroup>
         <ClInclude Include="Core\IRacingSDK\IRacingConnection.h" />

@@ -38,6 +38,8 @@ if "%1"=="release" (
     Core/IRacingSDK/irsdk_client.cpp ^
     Core/IRacingSDK/irsdk_utils.cpp ^
     Core/IRacingSDK/yaml_parser.cpp ^
+    Overlay/OverlayProximityTags.cpp ^
+    Core/Application/ProximityLogic.cpp ^
     Core/IRacingSDK/IRacingVariables.cpp ^
     Core/IRacingSDK/IRacingConnection.cpp ^
     Utils/Persistence/Database.cpp ^
@@ -77,6 +79,8 @@ if "%1"=="release" (
     Core/IRacingSDK/irsdk_client.cpp ^
     Core/IRacingSDK/irsdk_utils.cpp ^
     Core/IRacingSDK/yaml_parser.cpp ^
+    Overlay/OverlayProximityTags.cpp ^
+    Core/Application/ProximityLogic.cpp ^
     Core/IRacingSDK/IRacingVariables.cpp ^
     Core/IRacingSDK/IRacingConnection.cpp ^
     Utils/Persistence/Database.cpp ^

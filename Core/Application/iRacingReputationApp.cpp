@@ -1,3 +1,6 @@
+#include "../../Overlay/OverlayProximityTags.h"
+#include "ProximityLogic.h"
+ProximityLogic proximityLogic(&overlayManager);
 /*
 MIT License - iRacing Reputation System
 Implementación de la aplicación principal
@@ -194,8 +197,27 @@ void iRacingReputationApp::Run()
             lastDataUpdate = now;
         }
 
+        // Detectar proximidad y mostrar overlay si corresponde
+        int playerCarIdx = m_iracingConnection->GetPlayerCarIdx();
+        const auto &drivers = m_iracingConnection->GetSessionDrivers();
+        const auto &reputations = m_driverTagWindow->GetDriverReputations();
+        if (drivers.empty() || reputations.empty())
+        {
+            std::vector<TagInfo> tags;
+            TagInfo tag1;
+            tag1.name = "AGGRESSIVE";
+            tag1.color = ImVec4(1, 0.5, 0, 1);
+            tags.push_back(tag1);
+            overlayManager.ShowOverlay(99, "Piloto Test", tags, 5.0f);
+        }
+        else
+        {
+            proximityLogic.CheckAndShowOverlay(playerCarIdx, drivers, reputations, 10.0f);
+        }
+
         // Actualizar y renderizar ventana
         m_driverTagWindow->Update();
+        overlayManager.Update();
 
         // Verificar si la ventana debe cerrarse
         if (m_driverTagWindow->ShouldClose())

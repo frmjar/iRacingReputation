@@ -1,3 +1,4 @@
+#include "../../Overlay/OverlayProximityTags.h"
 #include "DriverTagWindow.h"
 
 void DriverTagWindow::Render()
@@ -38,6 +39,9 @@ void DriverTagWindow::Render()
         ImGui::EndChild();
     }
     ImGui::End();
+    // Renderizar overlay de proximidad aquí
+    extern OverlayProximityTagsManager overlayManager;
+    overlayManager.Render();
     ImGui::Render();
     ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
     m_swapChain->Present(1, 0);
